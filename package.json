@@ -1,0 +1,17 @@
+{
+  "name": "test-app",
+  "version": "1.0.0",
+  "description": "test-app desc",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dusanbe",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "hbs": "^4.0.1",
+    "plotly": "^1.0.6"
+  }
+}
