@@ -1,19 +1,22 @@
 <form action="/ploting" method="post">
   <fieldset>
-    <div class="form-group" style="width: 300px; margin: 20px">
+    <div class="form-group" style="width: 200px; margin: 20px">
       <label for="exampleSelect1">Select concrete class</label>
       <select class="form-control" id="exampleSelect1" name="MB">
-        <option>MB30</option>
-        <option>MB35</option>
-        <option>MB40</option>
-        <option>MB45</option>
-        <option>MB50</option>
+        <option {{{showMB30}}}>MB30</option>
+        <option {{{showMB35}}}>MB35</option>
+        <option {{{showMB40}}}>MB40</option>
+        <option {{{showMB45}}}>MB45</option>
+        <option {{{showMB50}}}>MB50</option>
       </select>
     <label class="form-control-label" style="margin-top: 20px">Bending coefficient K</label>
-    <input type="text" value="1.719" class="form-control is-valid" id="inputValid" name="coeffK">
+    <input type="text" value="{{showCoeffK}}" class="form-control is-valid" id="inputValid" name="coeffK">
     </div>
-    </fieldset>
     <button type="submit" class="btn btn-primary" style="margin: 20px">Submit</button>
+    <ul>
+      <li>x - section width [cm]</li>
+      <li>y - section height [cm]</li>
+      <li>z - bending moment [kNm]</li>
+    </ul>
   </fieldset>
 </form>
-
